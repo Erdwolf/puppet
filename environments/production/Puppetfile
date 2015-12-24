@@ -1,0 +1,12 @@
+# This file specifies the contents of './forge_modules'
+#
+# It can be used with librarian-puppet to regenerate that folder.
+# TODO Automate this.
+
+forge 'https://forgeapi.puppetlabs.com'
+
+mod 'puppetlabs/apt'
+mod 'puppetlabs/java'
+mod 'puppetlabs/stdlib'
+mod 'puppetlabs/vcsrepo'
+mod 'maestrodev/wget'
