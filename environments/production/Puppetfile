@@ -1,7 +1,6 @@
 # This file specifies the contents of './forge_modules'
 #
-# It can be used with librarian-puppet to regenerate that folder.
-# TODO Automate this.
+# Run 'rake forge' to have librarian-puppet update that folder.
 
 forge 'https://forgeapi.puppetlabs.com'
 

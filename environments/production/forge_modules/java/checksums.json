@@ -1,5 +1,5 @@
 {
-  "CHANGELOG.md": "75ff8a0b41466a4b7d0c933e7e4cd6f1",
+  "CHANGELOG.md": "e6ed1c5ec3597d1e79e2a1d25eb83fba",
   "CONTRIBUTING.md": "e2b8e8e433fc76b3798b7fe435f49375",
   "Gemfile": "e6e6eb07f0bfc9bb1e328895ca49b3f5",
   "LICENSE": "927881786db06d253bfed0ecf1b42b21",
@@ -11,7 +11,7 @@
   "manifests/config.pp": "368ed5e1b6dc066bd6c81c56b11483ae",
   "manifests/init.pp": "61d45b2d228a3dfc9bbdba3d7b98a3f0",
   "manifests/params.pp": "5e10ef4561b1319b921e14b314f0e690",
-  "metadata.json": "c2fcf71f2c78c9fe693f482d3e9a664a",
+  "metadata.json": "09f44faae882ea3c2b1699c66b25d4de",
   "spec/acceptance/install_spec.rb": "74389e626c11feb5f8c32c969a491c55",
   "spec/acceptance/nodesets/centos-5-vcloud.yml": "db8b5af87d2c931a25f8a9108005500c",
   "spec/acceptance/nodesets/centos-59-x64-pe.yml": "255100fb63e3b7c204e24dc9464ae904",

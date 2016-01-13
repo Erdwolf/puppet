@@ -20,12 +20,17 @@ To apply all manifests inside environments/production/manifests, run
 
 > puppet apply --config puppet.conf -e ''
 
+or simply
+
+> rake
+
+
 Directory layout
 ----------------
 
     docker/Dockerfile        <- environment used for testing
     environments/production/
-      forge_modules/            <- downloaded dependencies from the forge
+      forge_modules/            <- downloaded dependencies from the forge (see Puppetfile)
       site_modules/
         docker/
         gvim/
@@ -37,6 +42,7 @@ Directory layout
     scripts/*.sh             <- scripts for testing
     lib/facter/*.rb          <- custom facts
     puppet.conf              <- specifies paths and options
+    Rakefile                 <- common tasks you might want to do with this project
 
 
 Testing
