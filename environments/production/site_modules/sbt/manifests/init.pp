@@ -1,8 +1,6 @@
 
 class sbt {
 
-  include java
-
   include wget
 
   wget::fetch { 'https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.9/sbt-launch.jar?_ga=1.137549430.715993285.1431960594':
