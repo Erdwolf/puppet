@@ -25,3 +25,11 @@ desc 'Create graph (work in progress)'
 task :dot do
    sh 'puppet apply --config puppet.conf -e "" --noop --graph true --graphdir .'
 end
+
+# Synthesizing a task for each module
+Dir['environments/production/site_modules/*'].each do |path|
+   m = File.basename(path)
+   task m do
+      sh "puppet apply --config puppet.conf -e 'include #{m}'"
+   end
+end
