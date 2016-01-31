@@ -1,0 +1,17 @@
+#/bin/sh
+PERSONAL="matthias.reinarz@gmail.com"
+PROFESSIONAL="mreinarz@thoughtworks.com"
+
+CURRENT=`git config user.email`
+[ "$CURRENT" = "$PERSONAL" ] && {
+  SWITCH_TO="$PROFESSIONAL"
+} || {
+  SWITCH_TO="$PERSONAL"
+}
+read -p "Switch to $SWITCH_TO? [Y/n]: " REPLY
+[ -z "$REPLY" -o "$REPLY" = "y" ]] && {
+   git config --local user.email $SWITCH_TO
+   echo "switched."
+} || {
+   echo "still using $CURRENT."
+}
