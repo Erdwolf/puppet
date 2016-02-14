@@ -1,5 +1,7 @@
 class intellij {
-  $home = $::facts['home']
+
+  include userhome
+  $home = $userhome::home
   # install under user's home directory
   # so the installation doesn't require
   # permissions.

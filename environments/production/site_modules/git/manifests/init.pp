@@ -1,7 +1,8 @@
 class git {
 
-  $user = $::facts['user']
-  $home = $::facts['home']
+  include userhome
+  $user = $userhome::user
+  $home = $userhome::home
 
   file { "${home}/.gitconfig":
     owner   => $user,

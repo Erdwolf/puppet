@@ -1,7 +1,8 @@
 class bash {
 
- $user = $::facts['user']
- $home = $::facts['home']
+ include userhome
+ $user = $userhome::user
+ $home = $userhome::home
 
  file {"$home/.bashrc":
    owner  => $user,

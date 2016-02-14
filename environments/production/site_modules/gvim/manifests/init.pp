@@ -1,8 +1,9 @@
 
 class gvim {
 
-  $user = $::facts['user']
-  $home = $::facts['home']
+  include userhome
+  $user = $userhome::user
+  $home = $userhome::home
 
   package { 'vim-gtk':
     ensure => present,
