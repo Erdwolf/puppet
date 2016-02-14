@@ -6,7 +6,7 @@ class git {
 
   file { "${home}/.gitconfig":
     owner   => $user,
-    content => template('git/gitconfig.erb'),
+    source => 'puppet:///modules/git/gitconfig',
   }
 
   file { "${home}/.gitignore_global":
