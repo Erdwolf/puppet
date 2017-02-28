@@ -7,9 +7,9 @@ class intellij {
   # permissions.
   $target_dir = $home # /opt
 
-  $ideaIC = 'ideaIC-15.0.2'
+  $ideaIC = 'ideaIC-2016.3.4'
   $url  = "https://download.jetbrains.com/idea/$ideaIC.tar.gz"
-  $sha  = '8c988751871faf94a3f60a34f6360e75ddaec8ea21170e5bb05b1db4f4ca1979'
+  $sha  = '712dccd726b43e2187e8025a6effb711d35310b36d553dbf7bf85400ec1cec15'
 
   $check = "echo $sha /tmp/$ideaIC.tar.gz | sha256sum -c"
 
