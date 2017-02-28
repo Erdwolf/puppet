@@ -25,8 +25,11 @@ Plugin 'derekwyatt/vim-scala'
 " This is syntax highlightinh for Jade templates:
 Plugin 'digitaltoad/vim-jade'
 
-" This is syntax highlighting for Puppet
+" This is syntax highlighting for Puppet:
 Plugin 'rodjek/vim-puppet'
+
+" This is syntax highlighting for GraphQL queries and schemas:
+Plugin 'jparise/vim-graphql'
 
 
 " To get plugins from Vim Scripts, you can reference the plugin
