@@ -19,6 +19,10 @@ class docker {
   apt::source { 'download.docker.com':
     location => 'https://download.docker.com/linux/ubuntu',
     repos    => 'stable',
+    release  => $facts['os']['distro']['codename'] ? {
+      sarah => xenial,
+      /.*/ => $0
+    },
   } ->
 
   package { 'docker-ce':
